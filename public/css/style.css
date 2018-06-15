@@ -13,6 +13,14 @@
     src: url("../fonts/BankGothic-Md-BT-Medium.ttf");
 }
 
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+    a.nav-link {
+        color: white !important;
+    }
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -20,7 +28,7 @@ html, body {
     font-family: Helvetica, sans-serif;
 }
 
-#container {
+#home {
     margin: 0;
     padding: 0;
     background-attachment: fixed;
@@ -33,14 +41,38 @@ html, body {
     position: relative;
  }
 
+.navbar-brand {
+     letter-spacing: 2px;
+     font-family: BankGothic-Lt;
+     margin-left: 5px;
+ }
+
  span.navbar-toggler-icon {
      color: white;
  }
 
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .nav-link {
-     color: white !important;
- }
+    color: black !important;
+}
+
+.bg-white {
+    background-color: white;
+}
+ul.navbar-nav li a {
+    letter-spacing: 2px;
+    padding: 15px 10px !important;
+}
+.navbar-nav li a:hover {
+    background-color: #79D6F2;
+    color: white !important;
+}
+
 
 h1.head{
     margin: 0;
@@ -52,15 +84,22 @@ h1.head{
     background-color: white;
     opacity: 0.8;
     position: absolute;
+    top: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small {
+    margin-top: -10%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.big {
     width: 40%;
     max-width: 40%;
-    height: 40%;
-    max-height: 40%;
-    top: 50%;
     left: 50%;
-    margin-top: -15%;
-    margin-left: -15%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -10%;
+    margin-left: -20%;
 }
 
 img.logo {
