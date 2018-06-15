@@ -1,7 +1,7 @@
 $(function () {
-    // $('.board').setTimeOut(function () {
-    //     $(this).slideUp();
-    // }, 1000);
+    $('button').on("click", function () {
+        $(this).css('border', 'none');
+    });
     $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
             $('nav').addClass('bg-dark');
@@ -14,14 +14,14 @@ $(function () {
             $('body').css("background-color", "blue");
             $('ul.navbar-nav').children().removeClass('bg-white');
 
-            $('.board').removeClass('small').addClass('big');
+            // $('.board').removeClass('small').addClass('big');
         }
 
         if ($(window).width() < 992) {
             $('body').css("background-color", "lightgreen");
             $('ul.navbar-nav').children().removeClass('bg-white');
 
-            $('.board').removeClass('big').addClass('small');
+            // $('.board').removeClass('big').addClass('small');
         }
 
         if ($(window).width() <= 768) {
@@ -30,8 +30,4 @@ $(function () {
     };
     check();
     $(window).resize(check);
-
-
-
-
 });

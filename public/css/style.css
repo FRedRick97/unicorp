@@ -14,6 +14,15 @@
 }
 
 /* For Desktop */
+@media only screen and (min-width: 992px) {
+
+    .board {
+        max-width: 40%;
+        left: 50%;
+        margin-left: -20%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     a.nav-link {
         color: white !important;
@@ -45,6 +54,10 @@ html, body {
      letter-spacing: 2px;
      font-family: BankGothic-Lt;
      margin-left: 5px;
+ }
+
+ .bg-dark {
+    transition: background-color 0.3s linear;
  }
 
  span.navbar-toggler-icon {
@@ -86,9 +99,26 @@ h1.head{
     position: absolute;
     top: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    /* small */
+    margin-top: -10%;
+    width: 100%;
+    /* min-width: 100%; */
 
-.small {
+    /* animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0.3s; */
+}
+/*
+@keyframes example {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0.8;
+    }
+} */
+
+/* .small {
     margin-top: -10%;
     width: 100%;
     min-width: 100%;
@@ -100,7 +130,7 @@ h1.head{
     left: 50%;
     margin-top: -10%;
     margin-left: -20%;
-}
+} */
 
 img.logo {
     position: relative;
@@ -128,6 +158,11 @@ p.tagline {
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255);
 }
+
+button:hover {
+    background-color: #98AFC7;
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
