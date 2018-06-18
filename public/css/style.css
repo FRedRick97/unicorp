@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: "operatorMono-light";
+    src: url("../fonts/OperatorMono-LightItalic.otf");
+}
+
+@font-face {
+    font-family: "operatorMono-BoldItalic";
+    src: url("../fonts/OperatorMono-BoldItalic.otf");
+}
+
+@font-face {
     font-family: "BankGothic-Lt";
     src: url("../fonts/BankGothic-Lt-BT-Light.ttf");
 }
@@ -33,12 +43,11 @@
     }
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Helvetica, sans-serif;
+    font-family: operatorMono-light;
     color: black;
 }
 
@@ -61,11 +70,6 @@ a.navbar-brand {
     margin-left: 5px;
  }
 
-
- .bg-dark {
-    transition: background-color 0.3s linear;
- }
-
 .navbar {
     width: 100%;
     margin: 0;
@@ -75,6 +79,7 @@ a.navbar-brand {
 
 .nav-link {
     color: black !important;
+    font-family: operatorMono-BoldItalic;
 }
 
 .back-white {
@@ -84,14 +89,13 @@ ul.navbar-nav li a {
     letter-spacing: 2px;
     padding: 15px 10px !important;
 }
-.navbar-nav li a:not(.active):hover {
+.navbar-nav li:not(.active):hover {
     background-color: #79D6F2;
     color: white !important;
 }
 
 .active {
     background-color: #79D6F2;
-    /* color: black !important; */
 }
 
 
@@ -131,37 +135,9 @@ h1.head{
     position: absolute;
     top: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* small */
     margin-top: -10%;
     width: 100%;
-    /* border-radius: 50%; */
-    /* animation-name: example;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0.3s; */
 }
-/*
-@keyframes example {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 0.8;
-    }
-} */
-
-/* .small {
-    margin-top: -10%;
-    width: 100%;
-    min-width: 100%;
-}
-
-.big {
-    width: 40%;
-    max-width: 40%;
-    left: 50%;
-    margin-top: -10%;
-    margin-left: -20%;
-} */
 
 img.logo {
     position: relative;
