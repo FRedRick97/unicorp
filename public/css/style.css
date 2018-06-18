@@ -27,6 +27,10 @@
     a.nav-link {
         color: white !important;
     }
+
+    .back-white {
+        background: none !important;
+    }
 }
 
 
@@ -35,6 +39,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Helvetica, sans-serif;
+    color: black;
 }
 
 #home {
@@ -50,40 +55,43 @@ html, body {
     position: relative;
  }
 
-.navbar-brand {
-     letter-spacing: 2px;
-     font-family: BankGothic-Lt;
-     margin-left: 5px;
+a.navbar-brand {
+    letter-spacing: 2px;
+    font-family: BankGothic-Lt;
+    margin-left: 5px;
  }
+
 
  .bg-dark {
     transition: background-color 0.3s linear;
- }
-
- span.navbar-toggler-icon {
-     color: white;
  }
 
 .navbar {
     width: 100%;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 .nav-link {
     color: black !important;
 }
 
-.bg-white {
+.back-white {
     background-color: white;
 }
 ul.navbar-nav li a {
     letter-spacing: 2px;
     padding: 15px 10px !important;
 }
-.navbar-nav li a:hover {
+.navbar-nav li a:not(.active):hover {
     background-color: #79D6F2;
     color: white !important;
+}
+
+.active {
+    background-color: #79D6F2;
+    /* color: black !important; */
 }
 
 
@@ -91,7 +99,31 @@ h1.head{
     margin: 0;
     padding: 0;
     text-align: 0;
+    font-family: BankGothic-Lt;
+    text-align: center;
+    margin-top: -70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #ddd;
+
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
+
+@keyframes moveRight {
+    20% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+ }
 
 .board {
     background-color: white;
@@ -102,8 +134,7 @@ h1.head{
     /* small */
     margin-top: -10%;
     width: 100%;
-    /* min-width: 100%; */
-
+    /* border-radius: 50%; */
     /* animation-name: example;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -140,19 +171,28 @@ img.logo {
     margin-left: -100px;
 }
 
-h1.head {
-    font-family: BankGothic-Lt;
-    text-align: center;
-    margin-top: -70px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px #ddd;
-}
-
 p.tagline {
     font-family: Brandon;
     text-align: center;
     font-size: 1.5em;
+
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes moveLeft {
+    20% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .custom-toggler.navbar-toggler {
