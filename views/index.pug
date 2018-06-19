@@ -9,23 +9,30 @@ html
         script(src='/assets/js/script.js')
 
     body
-        nav.navbar.navbar-expand-md.fixed-top.navbar-dark
-            a.navbar-brand(href='#') UNICORP
-            button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
-                span.navbar-toggler-icon
-            #collapsibleNavbar.collapse.navbar-collapse
-                ul.navbar-nav.back-white
-                    li.nav-item.active
-                        a.nav-link.scroll(href='#home') Home
-                    li.nav-item
-                        a.nav-link.scroll(href='#services') Services
-                    li.nav-item
-                        a.nav-link.scroll(href='#contact') Contact
-        section#home
+        .wrapper
+            nav.navbar.navbar-expand-md.fixed-top.navbar-dark
+                a.navbar-brand.top-scroll(href='#default') UNICORP
+                button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+                    span.navbar-toggler-icon
+                #collapsibleNavbar.collapse.navbar-collapse
+                    ul.navbar-nav.back-white
+                        li.nav-item
+                            a.nav-link.scroll.white-color(href='#home') Home
+                        li.nav-item
+                            a.nav-link.scroll.white-color(href='#services') Services
+                        li.nav-item
+                            a.nav-link.scroll.white-color(href='#contact') Contact
             .board
                 img.logo(src='/assets/images/logo.png' alt='logo')
                 h1.head Unicorp
                 p.tagline A solution for everyone.
+        section#home
+            h1 I am Home.
+            h1 I am Home.
+            h1 I am Home.
+            h1 I am Home.
+            h1 I am Home.
+
         section#services
             h1 This is a $200 font.
             h1 This is a $200 font.
@@ -33,13 +40,13 @@ html
             h1 This is a $200 font.
             h1 This is a $200 font.
             h1 This is a $200 font.
-            h1 this is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
             h1 This is a $200 font.
             h1 This is a $200 font.
             h1 This is a $200 font.
             h1 This is a $200 font.
             h1 this is a $200 font.
-            h1 this is a $200 font {}.
+            h1 This is a $200 font.
+            h1 this is a $200 font.
             h1 if(lllll){}
+        section#contact
+            h1 I am new
