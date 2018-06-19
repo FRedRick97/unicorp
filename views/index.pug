@@ -10,18 +10,20 @@ html
 
     body
         .wrapper
-            nav.navbar.navbar-expand-md.fixed-top.navbar-dark
+            nav.navbar.navbar-expand-md.fixed-top.bg-dark
                 a.navbar-brand.top-scroll(href='#default') UNICORP
                 button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
                     span.navbar-toggler-icon
                 #collapsibleNavbar.collapse.navbar-collapse
-                    ul.navbar-nav.back-white
+                    ul.navbar-nav.mx-auto
                         li.nav-item
                             a.nav-link.scroll.white-color(href='#home') Home
                         li.nav-item
                             a.nav-link.scroll.white-color(href='#services') Services
                         li.nav-item
                             a.nav-link.scroll.white-color(href='#contact') Contact
+
+
             .board
                 img.logo(src='/assets/images/logo.png' alt='logo')
                 h1.head Unicorp

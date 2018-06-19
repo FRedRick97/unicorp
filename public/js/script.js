@@ -1,11 +1,9 @@
 $(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
-            $('a.navbar-brand, .nav-link').removeClass('white-color').addClass('black-color');
-            $('nav').css('transition', 'background-color 0.4s linear').addClass('bg-white');
+            $('.nav-link').removeClass('white-color').addClass('black-color');
         } else {
-            $('nav').removeClass('bg-white');
-            $('a.navbar-brand, .nav-link').removeClass('black-color').addClass('white-color');
+            $('.nav-link').removeClass('black-color').addClass('white-color');
         }
 
         var scrollbarLocation = $(this).scrollTop();
@@ -18,7 +16,9 @@ $(function () {
             var targetHref = '#' + $(this).attr('id');
 
             if ((scrollbarLocation + navHeight) < first.offset().top) {
-                $('li.nav-item').removeClass('active').addClass('black-color');
+                $('li.nav-item').each(function () {
+                    $(this).removeClass('active').addClass('black-color');
+                });
             }
 
 
