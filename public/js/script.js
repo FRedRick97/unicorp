@@ -1,11 +1,5 @@
 $(function () {
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
-            $('.nav-link').removeClass('white-color').addClass('black-color');
-        } else {
-            $('.nav-link').removeClass('black-color').addClass('white-color');
-        }
-
         var scrollbarLocation = $(this).scrollTop();
         var navHeight = $('nav').height();
         var navLink = $('ul.navbar-nav li');
@@ -14,10 +8,10 @@ $(function () {
         $('section').each(function () {
             var sectionOffset = $(this).offset().top;
             var targetHref = '#' + $(this).attr('id');
-
             if ((scrollbarLocation + navHeight) < first.offset().top) {
                 $('li.nav-item').each(function () {
-                    $(this).removeClass('active').addClass('black-color');
+                    $(this).removeClass('active');
+                    $('a', this).addClass('white-color');
                 });
             }
 
@@ -27,8 +21,13 @@ $(function () {
                     var a = $('a', this);
                     a.each(function () {
                         if ($(this).attr('href') === targetHref) {
-                            $(this).parent().removeClass('black-color').addClass('active');
-                            $(this).parent().siblings().removeClass('active').addClass('black-color');
+                            $(this).removeClass('white-color');
+                            $(this).parent().addClass('active');
+                            $(this).parent().siblings().removeClass('active');
+                            $(this).parent().siblings().each(function () {
+                                var anchor = $('a', this);
+                                anchor.addClass('white-color');
+                            });
                         }
                     });
                 });
@@ -48,6 +47,10 @@ $(function () {
 
     var scrollLink = $('.scroll');
     scrollLink.on('click', function (event) {
+        $(this).removeClass('white-color');
+        // console.log($(this).parent());
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
         if (this.hash !== "") {
             event.preventDefault();
             $('body, html').stop().animate({

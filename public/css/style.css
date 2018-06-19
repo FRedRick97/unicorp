@@ -112,7 +112,7 @@ a.navbar-brand {
 }
 
 .nav-link {
-    color: white !important;
+    /* color: white !important; */
     font-family: Helvetica, sans-serif;
 }
 
@@ -130,12 +130,11 @@ ul.navbar-nav li a {
     padding: 15px 10px !important;
 }
 .navbar-nav li:not(.active):hover {
-    background-color: #79D6F2;
-    color: white !important;
+    background-color: #1A1A1D;
 }
 
 .active {
-    background-color: #79D6F2;
+    color: #79D6F2 !important;
 }
 
 
