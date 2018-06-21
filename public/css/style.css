@@ -64,12 +64,7 @@ a.navbar-brand {
  }
 
  .white-color {
-    color: white !important;
- }
-
- .black-color {
-    color: black !important;
-
+    color: white;
  }
 
 .navbar {
@@ -80,7 +75,6 @@ a.navbar-brand {
 }
 
 .nav-link {
-    /* color: white !important; */
     font-family: Helvetica, sans-serif;
 
     position: relative;
@@ -119,7 +113,7 @@ ul.navbar-nav li a {
 }
 
 .active {
-    color: #79D6F2 !important;
+    color: #79D6F2;
 }
 
 

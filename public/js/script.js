@@ -52,7 +52,7 @@ $(function () {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
         if (this.hash !== "") {
-            event.preventDefault();
+            // event.preventDefault();
             $('body, html').stop().animate({
                 scrollTop: $(this.hash).offset().top - $('nav').height()
             }, 1000);
@@ -61,7 +61,7 @@ $(function () {
 
     var topscroll = $('.top-scroll');
     topscroll.on('click', function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         $('body, html').stop().animate({
             scrollTop: 0
         }, 1000);
