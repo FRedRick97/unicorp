@@ -34,16 +34,16 @@ $(function () {
             }
         });
     });
-    var check = function () {
-        if ($(window).width() >= 992) {
-            $('body').css("background-color", "rgb(170,57,57)");
-        }
-        if ($(window).width() < 992) {
-            $('body').css("background-color", "lightgreen");
-        }
-    };
-    check();
-    $(window).resize(check);
+    // var check = function () {
+    //     if ($(window).width() >= 992) {
+    //         $('body').css("background-color", "rgb(170,57,57)");
+    //     }
+    //     if ($(window).width() < 992) {
+    //         $('body').css("background-color", "lightgreen");
+    //     }
+    // };
+    // check();
+    // $(window).resize(check);
 
     var scrollLink = $('.scroll');
     scrollLink.on('click', function (event) {
