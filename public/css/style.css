@@ -36,16 +36,6 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    /* a.nav-link {
-        color: white !important;
-    } */
-
-    /* .back-white {
-        background: none !important;
-    } */
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -66,28 +56,6 @@ html, body {
     background-size: cover;
     position: relative;
 }
-
-/* nav::after {
-    position: absolute;
-    display: block;
-    content: '';
-    margin-top: 28px;
-    width: 100%;
-    height: 1px;
-    color: white;
-    background-color: white;
-    border-color: white;
-} */
-
-/* .line {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 2px;
-    color: white;
-    background-color: white;
-} */
 
 a.navbar-brand {
     letter-spacing: 2px;
@@ -114,10 +82,27 @@ a.navbar-brand {
 .nav-link {
     /* color: white !important; */
     font-family: Helvetica, sans-serif;
+
+    position: relative;
+    transition:all 0.4s;
 }
 
-.back-white {
-    background-color: white;
+.nav-link:after {
+    content: "";
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: all .4s;
+}
+
+.nav-link:focus::after {
+	width: 100%;
+    height: 100%;
+    opacity:0;
 }
 
 .bg-white {
@@ -127,7 +112,7 @@ a.navbar-brand {
 ul.navbar-nav li a {
     letter-spacing: 2px;
     text-align: center;
-    padding: 15px 10px !important;
+    padding: 15px 10px;
 }
 .navbar-nav li:not(.active):hover {
     background-color: #1A1A1D;
@@ -141,7 +126,6 @@ ul.navbar-nav li a {
 h1.head{
     margin: 0;
     padding: 0;
-    text-align: 0;
     font-family: BankGothic-Lt;
     text-align: center;
     margin-top: -70px;
@@ -149,13 +133,12 @@ h1.head{
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #ddd;
 
-    animation-name: moveRight;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation: moveRight 1s ease-out .75s;
+    animation-fill-mode: backwards;
 }
 
 @keyframes moveRight {
-    20% {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
@@ -191,13 +174,13 @@ p.tagline {
     text-align: center;
     font-size: 1.5em;
 
-    animation-name: moveLeft;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation: moveLeft 1s ease-out .75s;
+    animation-fill-mode: backwards;
+
 }
 
 @keyframes moveLeft {
-    20% {
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
