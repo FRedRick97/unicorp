@@ -107,7 +107,7 @@ ul.navbar-nav li a {
     text-align: center;
 
     color: white;
-    /* background-color: red; */
+    transition: background-color .2s;
 }
 
 ul.navbar-nav li a:hover {
