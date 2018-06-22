@@ -1,59 +1,170 @@
-doctype
-html
-    head
-        title UNICORP
-        link(rel='stylesheet' type='text/css' href='/assets/css/bootstrap.css')
-        link(rel='stylesheet' type='text/css' href='/assets/css/style.css')
-        script(src='/assets/js/jquery.js')
-        script(src='/assets/js/bootstrap.js')
-        script(src='/assets/js/script.js')
+doctype html
+head
+    title UNICORP
+    link(rel='stylesheet' type='text/css' href='/assets/css/bootstrap.css')
+    link(rel='stylesheet' type='text/css' href='/assets/css/style.css')
+    link(rel='stylesheet' type='text/css' href='/assets/css/glyphicon.css')
+    script(src='/assets/js/jquery.js')
+    script(src='/assets/js/bootstrap.js')
+    script(src='/assets/js/script.js')
 
-    body
-        .wrapper
-            nav.navbar.navbar-expand-md.fixed-top
-                a.navbar-brand.top-scroll(href='#') UNICORP
-                button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
-                    span.navbar-toggler-icon
-                #collapsibleNavbar.collapse.navbar-collapse
-                    ul.navbar-nav.mx-auto
-                        li.nav-item
-                            a.nav-link.scroll.white-color(href='#home') About Us
-                        li.nav-item
-                            a.nav-link.scroll.white-color(href='#services') Services
-                        li.nav-item
-                            a.nav-link.scroll.white-color(href='#contact') Contact
+body
+    .wrapper
+        nav.navbar.navbar-expand-md.fixed-top
+            a.navbar-brand.top-scroll(href='#') UNICORP
+            button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+                span.navbar-toggler-icon
+            #collapsibleNavbar.collapse.navbar-collapse
+                ul.navbar-nav.mx-auto
+                    li.nav-item
+                        a.nav-link.scroll.white-color(href='#home') About Us
+                    li.nav-item
+                        a.nav-link.scroll.white-color(href='#services') Services
+                    li.nav-item
+                        a.nav-link.scroll.white-color(href='#contact') Contact
 
 
-            .board
-                img.logo(src='/assets/images/logo.png')
-                h1.head Unicorp
-                p.tagline A solution for everyone.
-        section#home
-            .shadow
-                h1 About us
-            .main
-                p Unique Corporation is a small business firm specializing in providing network infrastructure, security, and managed services for Commercial and Government Clients of all sizes. All full-service network integration and engineering firm.
-                br
-                p Our firm provides the small to enterprise level business client with maximum performance, infinite scalability, and rock-solid security solutions for complex networking projects. We listen to and learn the client's business from the inside out in order to procide scalable solutions within budget, to support their needs and expectations.
-                br
-                p Our team has decades of experience in WAN/LAN network consulting, design, installation &amp; service.
-                br
-                p We are national supplier, installer and maintainer of data networking equipment, wireless voice-data networks, supply &amp laying of fubder optic cables and jelly filled cables, Cat5e, Cat6 & Cat6A structured cabling system. We specialize in some of the most advanced and versatile products in the market.
+        .board
+            img.logo(src='/assets/images/logo.png')
+            h1.head Unicorp
+            p.tagline A solution for everyone.
+    section#home
+        .shadow
+            h1 About us
+        .main
+            p Unique Corporation is a small business firm specializing in providing network infrastructure, security, and managed services for Commercial and Government Clients of all sizes. All full-service network integration and engineering firm.
+            br
+            p Our firm provides the small to enterprise level business client with maximum performance, infinite scalability, and rock-solid security solutions for complex networking projects. We listen to and learn the client's business from the inside out in order to procide scalable solutions within budget, to support their needs and expectations.
+            br
+            p Our team has decades of experience in WAN/LAN network consulting, design, installation &amp; service.
+            br
+            p We are national supplier, installer and maintainer of data networking equipment, wireless voice-data networks, supply &amp laying of fubder optic cables and jelly filled cables, Cat5e, Cat6 & Cat6A structured cabling system. We specialize in some of the most advanced and versatile products in the market.
 
-        section#services
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 This is a $200 font.
-            h1 this is a $200 font.
-            h1 This is a $200 font.
-            h1 this is a $200 font.
-            h1 if(lllll){}
-        section#contact
-            h1 I am new
+    section#services
+        .shadow
+            h1 Services
+        #slider
+            a(href="#" class='left' )
+                span.glyphicon.glyphicon-circle-arrow-left
+            ul.slides
+                li.slide
+                    table.shade.one
+                        tr
+                            th(colspan="2") Networking Products
+                        tr
+                            td switches
+                            td Routers
+                        tr
+                            td DSLAM
+                            td Telephone Exchanges
+                        tr
+                            td DSL Modems
+                            td LAN Extenders
+                        tr
+                            td Media Convertors
+                            td Optimux
+                        tr
+                            td Degital Cross Connects (DXC)
+                            td FCBC's
+                        tr
+                            td Firewall / UTM
+                            td Wireless Radio
+                        tr
+                            td Wireless Access Points
+                            td Test &amp; Measuring Equipments
+                        tr
+                            td NMS
+                            td Optical Tool Kits
+                        tr
+                            td CCTV Camera's
+                            td DVR
+                        tr
+                            td Electrical Fencing
+                            td Boom Barriers
+                li.slide
+                    table.shade.two
+                        tr
+                            th(colspan="2") Data Products
+                        tr
+                            td Desktops
+                            td Work Stations
+                        tr
+                            td Laptops
+                            td Servers
+                        tr
+                            td Storages
+                            td NAS
+                        tr
+                            td SAN
+                            td Printers
+                        tr
+                            td Large Display Panels
+                            td Data Walls
+                        tr
+                            td Motorize Screens
+                            td Audio Devices
+                        tr
+                            td Projectors
+                            td UPS
+                        tr
+                            td Battery Banks
+                            td Battery Cells (2V) Banks
+                li.slide
+                    table.shade.three
+                        tr
+                            th Network Cabling Products
+                        tr
+                            td UTP Cables
+                        tr
+                            td STP Cables
+                        tr
+                            td Optical Fiber Cable
+                        tr
+                            td Jelly Filled Cables
+                        tr
+                            td Optical Patch cords
+                        tr
+                            td UTP Patch Cords
+                        tr
+                            td LIU's
+                        tr
+                            td Patch Panel
+                        tr
+                            td Networking Racks
+                        tr
+                            td Cable Manager's
+                li.slide
+                    table.shade.one
+                        tr
+                            th(colspan="2") Networking Products
+                        tr
+                            td switches
+                            td Routers
+                        tr
+                            td DSLAM
+                            td Telephone Exchanges
+                        tr
+                            td DSL Modems
+                            td LAN Extenders
+                        tr
+                            td Media Convertors
+                            td Optimux
+                        tr
+                            td Degital Cross Connects (DXC)
+                            td FCBC's
+                        tr
+                            td Firewall / UTM
+                            td Wireless Radio
+                        tr
+                            td Wireless Access Points
+                            td Test &amp; Measuring Equipments
+                        tr
+                            td NMS
+                            td Optical Tool Kits
+                        tr
+                            td CCTV Camera's
+                            td DVR
+                        tr
+                            td Electrical Fencing
+                            td Boom Barriers
+

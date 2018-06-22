@@ -212,14 +212,13 @@ button:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-#home, #service, #contact {
-    /* height: 95vh; */
+#home, #services, #contact {
+    padding: 30px;
 }
 
 #home {
     background-color: #292929;
     color: white;
-    padding: 30px;
 }
 
 .header-text {
@@ -239,9 +238,10 @@ button:hover {
 footer {
     height: 25vh;
 }
-
-.shadow {
+#home .shadow {
     color :rgb(160,160,160);
+}
+.shadow {
     /* width: 30%; */
     font-size: 2em;
     padding: 20px 40px;
@@ -253,3 +253,76 @@ footer {
     margin-bottom: 2%; */
 }
 
+#services {
+    background-image: url("../images/tea.jpg");
+    background-position: center;
+    opacity: 0.6;
+    height: 100vh;
+
+    background-size: cover;
+}
+#services .shadow {
+    color: white;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5) !important;
+}
+
+ #slider {
+     width: 900px;
+     height: 500px;
+     overflow: hidden;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%, 10%);
+     background-color: red;
+ }
+
+ .slides {
+     display: block;
+     width: 8000px;
+     height: 500px;
+     position: relative;
+ }
+
+ .slide {
+     float: left;
+     width: 900px;
+     height: 600px;
+ }
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+}
+td,th {
+    text-align: center;
+    padding: 8px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.shade {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5) !important;
+    position: relative;
+}
+
+.one {
+    left: 20%;
+}
+
+.two {
+    left: 25%;
+}
+
+.three {
+    left: 33%;
+}
+
+a.left {
+    font-size: 5em;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+}
